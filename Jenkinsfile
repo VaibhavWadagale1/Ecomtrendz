@@ -20,7 +20,7 @@ pipeline {
         }
         stage('Push') {
             steps {
-                withCredentials([usernamePassword(credentialsId: 'jenkins-demo',
+                withCredentials([usernamePassword(credentialsId: 'docker-hub-crediatials',
                     usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
                     sh 'echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin'
                     sh 'docker push $BACKEND:$BUILD_NUMBER'
