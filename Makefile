@@ -3,7 +3,7 @@
 DOCKER_ID = algo04
 BACKEND = nxttrendz-backend
 FRONTEND = nxttrendz-frontend
-VERSION = v3
+VERSION = v2
 LATEST = latest
 
 build:
