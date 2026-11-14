@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        DOCKER_ID  = 'priyaankit'
+        DOCKER_ID  = 'algo04'
         BACKEND    = "${DOCKER_ID}/nxttrendz-backend"
         FRONTEND   = "${DOCKER_ID}/nxttrendz-frontend"
         EC2_HOST   = '35.154.230.22'
@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/Priya9096/Nxttrendz'
+                git branch: 'main', url: 'https://github.com/VaibhavWadagale1/Ecomtrendz'
             }
         }
         stage('Build') {
