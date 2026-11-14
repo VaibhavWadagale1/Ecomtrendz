@@ -1,6 +1,6 @@
 .PHONY: build up down logs migrate superuser shell
 
-DOCKER_ID = priyaanki
+DOCKER_ID = algo04
 BACKEND = nxttrendz-backend
 FRONTEND = nxttrendz-frontend
 VERSION = v1
